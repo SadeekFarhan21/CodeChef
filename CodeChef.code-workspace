@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "../History Notes"
 		}
 	],
 	"settings": {
@@ -11,6 +11,9 @@
 		"java.project.outputPath": "bin",
 		"java.project.referencedLibraries": [
 			"lib/**/*.jar"
-		]
+		],
+		"files.associations": {
+			"iostream": "cpp"
+		}
 	}
 }

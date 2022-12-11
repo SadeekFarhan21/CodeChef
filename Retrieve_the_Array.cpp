@@ -2,17 +2,23 @@
 using namespace std;
 
 void solve(){
-    int n; cin >> n;
-    vector <int> v(n);
+    long long n, sum = 0; cin >> n;
+    vector <long long> v(n);
     for(int i = 0; i < n; i++){
         cin >> v[i];
+        sum += v[i];
     }
-    
+    sum /= (n + 1);
+    for(int i = 0; i < n; i++){
+        cout << v[i] - sum << " ";
+    }
+    cout << "\n"; return;
+
 }
 
 int main(){
-    int t; cin >> t;
-    for(int i = 0; i < t; i++){
+    long long t; cin >> t;
+    for(long long i = 0; i < t; i++){
         solve();
     }
     return 0;
