@@ -9,8 +9,8 @@ void solve(){
         cin >> v[i];
     }
     sort(v.begin(), v.end());
-    for(int i = 0; i < x / c; i++){
-        if((x - v[i]) > c){
+    for(int i = 0; i < n; i++){
+        if(x - v[i] > c and v[i] < x){
             v[i] = x;
             cost += c;
         }
